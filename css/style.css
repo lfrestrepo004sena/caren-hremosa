@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+body{
+    background: url(../images/fondo3.jpg);
+    background-size: cover;
+    text-align: center; 
+    background-size: cover;
+    font-family: 'Acme', sans-serif;
+    padding-top: 10px;
+}
+button{
+    padding: 10px 12px;  /*margen interna s,i,d,iz*/    
+    margin: 8px; /*margen de separacion entre botones*/    
+    font-size: 15px; /*tamaño de letra*/  
+    background: #ffcddc;  /*color de fondo de los botones*/    
+    color: #000000; /*color de texto del boton*/    
+    border-radius: 2px; /*bordes de los botones*/
+    border: 2px solid #f70993; /*bordes, grosor y color*/
+    cursor: pointer; /*cambiar el cursor por la manito encima de boton*/   
+    transition: 0.5s; /*}tiempo en que se demora para cambiar el color del boton cuando este encima del boton*/    
+}
+
+button:hover {
+    background: #e9abb8; /*para cambiar el color cuando este encima del boton*/  
+}
+h1{
+    color: #000000;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin: 20px;
+    
+}
+/* si le ponemos id a un elemento de html para invocarlo a traves de un css en con un "#"*/
+
+#contBotones{
+    width: 550px;
+    height: 400px;
+    background: #f781e7;
+  
+}
+
+#contFigura{
+    width: 550px;
+    height: 400px;
+    background: #fd5c9a;
+    
+}
+
+#figura{
+    width: 180px;
+    height: 180px;
+    background: #ffffff; 
+    margin: 0 auto;  /*sirve para centrar*/
+    margin-top: 60px;
+    transition: .5s;
+    
+}
+
+#figura.circulo{
+    border-radius: 50%;
+    transform: rotate(360deg);
+    background: #98f785; 
+    
+}
+
+#figura.rombo{
+    width: 180px;
+    height: 180px;
+    transform: rotate(-45deg);
+    background: #7dd1f8;
+  
+    
+}
+
+#figura.rectanguloh{
+    width: 205px;
+    height: 95px;
+    background: #e1ff76;
+    
+}
+
+#figura.rectangulov{
+    width: 95px;
+    height: 180px;
+    background: #c41eca;
+    
+}
+
+#fila{
+    display: flex; /* ordenar los elementos a nivel de dos dimensiones o mas eje x o y */
+    justify-content: space-evenly; /* HORIZONTAL para justificar o editar elementos en  el contenido en el centro o d-iz -- center, flex-end, flex-start */
+    align-items: center;  /* VERTICAL */
+    height: 700px;
+}
+
+#figura.subir{
+    transform: translatey(-50px);
+    background: #ff0000; 
+}
+
+#figura.abajo{
+    transform: translatey(80px);
+    background: #000000;
+}
+
+#figura.izquierda{
+    transform: translatex(-90px);
+    background: #3700ff;
+}
+
+#figura.derecha{
+    transform: translatex(90px);
+    background: #caec05;
+}
+
+#figura.diagonal{
+    transform: translatey(100px) translateX(120px);
+    background: #00ff22
+}
+
+#operaciones{
+    background: #ffcddc;
+    padding: 10px 12px;
+    border-radius: 2px;
+    border: 2px solid #f70993;
+    margin: 2px;  
+    font-size: 15px;
+}
+#respuesta{
+    background: #7dd1f8;
+    padding: 10px 12px;
+    border-radius: 2px;
+    border: 2px solid #f70993; 
+    margin: 2px; 
+    font-size: 15px;
+}
+#valor1{
+    background: #7dd1f8;
+    padding: 10px 12px;
+    border-radius: 2px;
+    border: 2px solid #f70993; 
+    margin: 2px; 
+    font-size: 15px;
+}
+#valor2{
+    background: #7dd1f8;
+    padding: 10px 12px;
+    border-radius: 2px;
+    border: 2px solid #f70993; 
+    margin: 2px; 
+    font-size: 15px;
+}
+#contOperaciones button{
+    background: #ff80ca;
+
+}
+
+#contOperaciones{
+    padding: top 20px 0;
+}
+
+#chat{
+    background: #ff0095;
+    width: 300px;
+    height: 350px;
+    position: fixed;
+    right: -300px;
+    top: 20px;
+}
+
+#chat.active{
+    right: 0px;
+   
+}
+
+#btnChat{
+    position: fixed;
+    right: -48px;
+    top: 25%;
+    background: #c404a4;
+    transform: rotate(-90deg);
+    color: #ffffff;
+    font-size: 15px;
+    width: 120px;
+    border-radius: 8px;    
+    transition: 1s;
+
+}
+
+#btnChat.active{
+    right: 240px;
+
+}
